@@ -1,0 +1,150 @@
+@import "../../app.scss";
+
+.services{
+    background: linear-gradient(180deg, #0c0c1d, #111132);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1;
+
+    .textContainer{
+        flex: 1;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 80px 0px;
+
+        @include mobile{
+            padding-top: 10px;
+            align-self: center;
+            text-align: center;
+            flex-direction: column;
+        }
+
+        p{
+            flex: 1;
+            font-weight: 200;
+            font-size: 16px;
+            color: gray;
+            text-align: right;
+
+            @include mobile{
+                text-align: center;
+            }
+        }
+
+        hr{
+            width: 350px;
+            border: none;
+            border-top: 0.5px solid gray;
+
+        }
+    }
+
+ .titleContainer {
+    margin: auto;
+        .title {
+            font-size: 60px;
+            font-weight: 800;
+            letter-spacing: 4px;
+            padding-bottom: 40px;
+
+            @include mobile{
+               font-size: 32px;
+               text-align: center;
+            padding-top: 40px;
+               
+          }
+          
+
+            }
+        }
+    }
+
+
+    .listContainer{
+        display: flex;
+        max-width: 1166px;
+        height: 100%;
+        margin: auto;
+        z-index: 2;
+
+        @include mobile{
+            margin: none;
+              flex-direction: column;
+              width: 320px;
+              padding-top: 20px;
+        }
+        
+
+        .box{
+            width: 400px;
+            height: 300px;
+            padding: 25px;
+            border: 0.5px solid gray;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            gap: 20px;
+            z-index: 3;
+
+            @include mobile{
+                width: 320px;
+                // align-items: center;
+                height: 200px;
+                padding: 20px;
+                gap: 10px;
+            }
+
+
+            .textdiv{
+                height: 80px;
+                border-bottom:1px solid gray ;
+
+
+                h2{
+                    @include mobile{
+                  font-size: 28px;
+                 
+                    }
+                }
+            }
+            .listdiv{
+                height: 200px;
+                padding-left: 20px;
+
+                @include mobile{
+                    // padding-left: 30px;
+                    width: 100%;
+                }
+            }
+
+            
+
+           /* button{
+                padding: 10px;
+                background-color: orange;
+                border: none;
+                cursor: none;
+                z-index: 4;
+
+                @include mobile{
+                   width: 100%;
+                   padding: 5px;
+                }
+
+                &:hover {
+                    // This is a fallback hover effect using SCSS
+                    // In case JS is disabled, this style still applies
+                    background-color: darkorange;
+                    color: white;
+                }
+            } */
+
+        }
+
+
+    
+}
